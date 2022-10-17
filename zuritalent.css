@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+img{
+    max-width: 100%;
+}
+button{
+    border: none;
+}
+header{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+nav{
+    display: flex;
+    margin: 1em 7em;
+    /* width: 100%; */
+}
+.header-ul-div{
+    margin-left: auto;
+}
+.header-ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+}
+li{
+    margin-right: 4em;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.btn-header{
+    background-color: #e7332b;
+    border-radius: 0 0 0.5rem 0;
+    padding: 0.75em 2em;
+    color: #fff;
+    font-size: 1.1rem;
+}
+main{
+    margin-top: 5em;
+    width: 100%;
+}
+span{
+    color: #e7332b;
+}
+#section1{
+    display: flex;
+    align-items: center;
+    padding: 10em 6em;
+    min-height: 100vh;
+}
+.section-text1-line{
+    display: flex;
+    margin-bottom: 2em;
+}
+h1{
+    font-size: 2.5rem;
+}
+#section1 p{
+    width: 60%;
+    font-size: 1.3rem;
+    color: #787878;
+}
+.btn-section1-flex{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+.btn1, .btn4{
+    background-color: #e7332b;
+    border-radius: 0 0 0.5rem 0;
+    color: #fff;
+    padding: 1rem 3.2rem;
+    font-size: 1.1rem;
+    line-height: 1.1em;
+   box-shadow:  rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px;
+}
+.btn2{
+    background-color: #585858;
+    border-radius: 0 0 0.5rem 0;
+    color: #fff;
+    padding: 1rem 3.2rem;
+    font-size: 1.1rem;
+    line-height: 1.1em;
+    box-shadow:  rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px;
+}
+.btn-header:hover, .btn1:hover, .btn2:hover, .btn4:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.section-img1{
+    width: 50%;
+    /* border: 3px solid green; */
+    position: relative;
+}
+.liness{
+    position: absolute;
+    width: 40%;
+    bottom: 4em;
+    left: 15em;
+}
+#section2{
+    background-image: url(images/bgsection2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 8em;
+}
+#section2 h2{
+    font-size: 2.5rem;
+    width: 70%;
+    margin-bottom: 0.5em;
+}
+#section2 h5{
+    margin-bottom: 0.5em;
+    font-size: 1.3rem;
+}
+#section2 p{
+    font-size: 1.3rem;
+    color: #787878;
+}
+.country-flex{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    justify-content: space-between;
+}
+.country{
+    background-color: #fff;
+    padding: 0.7em;
+    border-radius: 0.4rem;
+}
+.section-img2{
+    width: 50%;
+    margin-left: auto;
+}
+.section3-1{
+    min-height: 80vh;
+    padding: 6em 0 6em 6em;
+}
+#section3 h2{
+    width: 50%;
+    font-size: 2.5rem;
+    margin-bottom: 0.8em;
+}
+.section3-flex{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.top{
+    margin-bottom: 4em;
+    max-width: 100%;
+}
+.section3-1-top{
+    display: flex;
+    width: 100%;
+}
+.section3-btn{
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: 0 8px 30px hsla(0,0%,48%,.16);
+    background-color: #fff;
+    color: #787878;
+    padding: 1em;
+    font-size: 1.125rem;
+    max-width: 25%;
+}
+.country:hover, .section3-btn:hover{
+    transform: translateY(-10px);
+    transition: transform .3s ease,-webkit-transform .3s ease;
+}
+.section3-2{
+    background-color: rgb(255, 248, 229);
+    padding: 4em 5em;
+}
+.section3-2 h2{
+    text-align: center;
+    width: 100%;
+}
+.reasons-div{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+    width: 90%;
+    margin: 0 auto;
+}
+.reasons{
+    background-color: #fff;
+    width: 30%;
+    padding: 3em 1.5em;
+    text-align: center;
+    border-radius: 0 0 1rem 0;
+    color: #787878;
+    flex-direction: column;
+    justify-content: center;
+}
+.reasons:hover{
+    background-color: #000;
+    color: #fff;
+}
+.reasons-img-div{
+    margin: 0 auto;
+    display: inline-block;
+    width: 25%;
+    margin-bottom: 0.5em;
+}
+.reasons-img{
+    width: 100%;
+}
+.reasons p{
+    font-size: 1.2rem;
+}
+.btn-section3-flex{
+    padding-top: 4em;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.hire-talents{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 2.5rem;
+    width: 35%;
+    max-width: 35%;
+    margin: 0 auto;
+}
+.hire-talents h2{
+    font-size: 2.5rem;
+}
+.hire-talents p{
+    margin-bottom: 1em;
+    color: #787878;
+    font-size: 1.125rem;
+    width: 70%;
+    margin: 1em auto;
+}
+.btn4{
+    margin-bottom: 1em;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+.book{
+    width: 70%;
+}
+.hire-talents {
+    position: fixed;
+    /* top: 0; */
+    /* right: 0; */
+    background-color: #fff;
+    z-index: 3;
+    place-content: center;
+    place-items: center;
+    width: 0%;
+    height: fit-content;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }  
+  .hire-talents.active{
+    opacity: 1;
+    pointer-events: all;
+    width: 100%;
+  }
+  .btn-header {
+    position: relative;
+    z-index: 5;
+  }
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 4em 3em 1em 3em;
+    min-height: 20vh;
+}
+.footer-section1{
+    margin-bottom: auto;
+}
+.footer-section2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+}
+.social-icon-div{
+    margin-left: auto;
+    display: flex;
+    margin-bottom: 3em;
+    /* border: 1px solid firebrick; */
+}
+.social-icon{
+    color: #787878;
+}
+.fa-brands{
+    color: #fff;
+    font-size: 2.5rem;
+}
+.fa-brands + .fa-brands{
+    margin-left: 0.6em;
+}
+.fa-brands:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.footer-section2 p{
+    text-align: right;
+}
+
+@media(min-width: 700px) and (max-width: 1000px){
+    nav{
+        margin: 1em;
+        align-items: center;
+    }
+    .header-ul li{
+        display: none;
+       } 
+       main{
+        margin-top: 8em;
+       }
+       #section1{
+        display: flex;
+        flex-direction: column;
+        padding: 5em 1.5em;
+        text-align: center;
+        min-height: unset;
+        width: 70%;
+        margin: 0 auto;
+       }
+       h1{
+        font-size: 2.7rem;
+       }
+       .section-text1-line{
+        display: flex;
+        flex-direction: column;
+       }
+       .line{
+        margin-left: auto;
+        margin-top: 0;
+       }
+       #section1 p{
+        width: 100%;
+        font-size: 1.1rem;
+        color: #787878;
+        line-height: 1.3em;
+        margin-bottom: 2em;
+    }
+    .btn-section1-flex{
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        margin: 0 auto 4em auto;
+    }
+    .btn1, .btn2{
+        padding: 1em 3em;
+    }
+    .section-img1{
+        width: 100%;
+    }
+    .liness{
+        display: none;
+    }
+    #section2{
+        display: flex;
+        flex-direction: column;
+        padding: 5em 1.5em;
+        margin: 0 auto;
+    }
+    .section-text2{
+        width: 60%;
+        text-align: center;
+    }
+    #section2 h2{
+        width: 100%;
+        font-size: 2rem;
+    }
+    #section2 h5, #section2 p{
+        font-size: 1.3rem;
+    }
+    .country-flex{
+        width: 90%;
+    }
+    .country{
+        width: 15%;
+    }
+    .section-img2{
+        margin: 4em auto 0 auto;
+        width: 50%;
+    }
+    .liness{
+        bottom: 1em;
+        left: 6em;
+        width: 60%;
+    }
+    #section3{
+        text-align: center;
+}
+.section3-1{
+    padding: 7em 1.5em 2em 1.5em;
+    width: 80%;
+    margin: 0 auto;
+}
+    #section3 h2{
+        width: 90%;
+        font-size: 2rem;
+        margin-bottom: 0.8em;
+    }
+    .section3-flex{
+        display: flex;
+    flex-flow: row wrap;
+        gap: 1em;
+        margin: o auto;
+        width: 100%;
+    }
+    .section3-btn{
+        max-width: 75%;
+    }
+    .bottom{
+        margin: 0 auto;
+    }
+    .btm{
+        width: 30%;
+        line-height: 1em;
+    }
+    .line2{
+        display: none;
+    }
+    .section3-2{
+        padding: 7em 5em 3em 5em;
+    }
+    .section3-2 h2{
+        text-align: center;
+        width: 100%;
+        padding-bottom: 2em;
+    }
+    .reasons-div{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 1em;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .reasons{
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        border-radius: 0 0 1rem 0;
+        color: #787878;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .reasons:hover{
+        background-color: #000;
+        color: #fff;
+    }
+    .reasons-img-div{
+        margin: 0 auto;
+        display: inline-block;
+        width: 25%;
+        margin-bottom: 0.5em;
+    }
+    .reasons-img{
+        width: 100%;
+    }
+    .reasons p{
+        font-size: 1.2rem;
+    }
+    .btn-section3-flex{
+        padding-top: 4em;
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .btm2{
+        grid-column: 1/-1;
+    }
+    .rope{
+      display: none;
+    }
+    .btn-section3-flex{
+        padding-top: 4em;
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .logo-div-footer{
+        margin-bottom: 0;
+    }
+    footer p{
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 700px){
+    header{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    nav{
+        margin: 1em;
+        align-items: center;
+    }
+   .header-ul li{
+    display: none;
+   } 
+   .header-logo{
+    width: 100%;
+   }
+   .btn-header{
+    margin-left: auto;
+    padding: 0.5em 1em;
+    font-size: 1.2rem;
+   }
+   main{
+    margin-top: 3em;
+   }
+   #section1{
+    display: flex;
+    flex-direction: column;
+    padding: 5em 1.5em;
+    text-align: center;
+    min-height: unset;
+   }
+   h1{
+    font-size: 2.7rem;
+   }
+   .section-text1-line{
+    display: flex;
+    flex-direction: column;
+   }
+   .line{
+    margin-left: auto;
+    margin-top: 0;
+    width: 100px;
+   }
+   #section1 p{
+    width: 100%;
+    font-size: 1.1rem;
+    color: #787878;
+    line-height: 1.3em;
+}
+.btn-section1-flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+.btn1, .btn2{
+    padding: 1em;
+    font-size: 1rem;
+}
+.section-img1{
+    width: 100%;
+}
+.liness{
+    display: none;
+}
+#section2{
+    display: flex;
+    flex-direction: column;
+    padding: 5em 1.5em;
+}
+#section2 h2{
+    width: 100%;
+    font-size: 2rem;
+}
+#section2 h5{
+    font-size: 1rem;
+}
+#section2 p{
+    font-size: 1rem;
+}
+.country-flex{
+    width: 100%;
+}
+.country{
+    width: 15%;
+}
+.section-img2{
+    margin: 4em auto 0 auto;
+    width: 90%;
+}
+.section3-1{
+    padding: 7em 2em 2em 2em;
+}
+#section3 h2{
+    width: 100%;
+    font-size: 2rem;
+}
+.btm-h2{
+    font-size: 0.5rem;
+}
+.section3-flex{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    gap: 1em;
+}
+.section3-btn{
+    max-width: 47%;
+}
+.bottom{
+    gap: 0;
+}
+.btm{
+    width: 70%;
+    margin-bottom: 0.5em;
+    line-height: 1.8em;
+}
+.line2{
+    display: none;
+}
+.section3-2{
+    padding: 7em 2em 2em 2em;
+}
+.reasons-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5em;
+}
+.reasons{
+    width: 100%;
+}
+.reasons-img-div{
+    width: 30%;
+    margin-bottom: 2em;
+}
+.reasons p{
+    font-size: 1rem;
+    line-height: 1.4em;
+}
+.btn-section3-flex{
+    width: 100%;
+}
+
+footer{
+    display: block;
+    padding: 5em 1em 1em 1em;
+    text-align: center;
+    font-size: 1rem;
+}
+footer p{
+    text-align: center;
+    margin: 0 auto;
+}
+.footer-section2{
+    margin-top: 1em;
+    margin-bottom: 3em;
+    margin-left: unset;
+    text-align: center;
+}
+.social-icon-div{
+    text-align: center;
+    margin-left: unset;
+}
+.social-icon{
+    text-align: center;
+    margin: 0 auto;
+}
+.copyright{
+    border-top: 1px solid #787878;
+    padding-top: 1em;
+    font-size: 1.1rem;
+}
+}
